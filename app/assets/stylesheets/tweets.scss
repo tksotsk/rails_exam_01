@@ -11,12 +11,17 @@ html{
         
         background-color: red;
         height: 5rem;
+        display: table;
+        width: 100%;
         div {
-            height: auto;
-            
+            height: 100%;
+            display: table-cell;
+            vertical-align: middle;
             h1 {
-                margin: 0;
                 
+                margin: auto;
+                text-align: center;
+               
             }
         }
         
