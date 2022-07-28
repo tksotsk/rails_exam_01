@@ -1,10 +1,12 @@
 <%= render 'header' %>
 
-<h1>ツイートの編集</h1>
+<div id = "body">
+  <h1>ツイートの編集</h1>
 
 <%= render 'form', tweet: @tweet %>
 
 <%= link_to 'ツイートを見る', @tweet %> |
 <%= link_to '戻る', tweets_path %>
+</div>
 
 <%= render 'footer' %>

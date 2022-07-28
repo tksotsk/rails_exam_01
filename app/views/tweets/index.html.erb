@@ -1,6 +1,7 @@
 <%= render 'header' %>
 
-<p id="notice"><%= notice %></p>
+<div id = "body">
+  <p id="notice"><%= notice %></p>
 
 <h1>ツイートの一覧</h1>
 
@@ -18,7 +19,7 @@
         <td><%= tweet.content %></td>
         <td><%= link_to 'ツイートを見る', tweet %></td>
         <td><%= link_to 'ツイートを編集する', edit_tweet_path(tweet) %></td>
-        <td><%= link_to 'ツイートを削除する', tweet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'ツイートを削除する', tweet, method: :delete, data: { confirm: 'ほんまによろしいですか？？' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -27,5 +28,6 @@
 <br>
 
 <%= link_to '新しいツイート', new_tweet_path %>
+</div>
 
 <%= render 'footer' %>
